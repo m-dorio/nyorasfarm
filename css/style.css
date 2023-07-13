@@ -10,13 +10,17 @@
 
 /* MIKE DORIO BUILT THIS WEBPAGE FOR A FRIEND */
 
+.btn-outline-light{
+    border: none !important;
+}
+
 :root{
     --main-bg-color: #CDC2AE;
     --main-bg-darker-color: #7d6e51;
     --dark-color: #000000;
     --light-text-color: #ffffff;
     --red-color: #ff0000;
-    --primary-green:#92ab57;
+    --primary-green:rgba(65, 111, 15, 0.87);
     --primary-green-hover:#5d6e36;
     --half-light:rgba(190, 190, 190, 0.3);
     --bs-gradient:rgba(0, 0, 0, 0.59);
@@ -39,8 +43,6 @@
 	background-size: cover;
 }
 
-
-
 #contact-content{
    
 	background: 
@@ -48,6 +50,18 @@
         linear-gradient(217deg, rgba(255, 231, 136, 0.7), rgba(255,0,0,0) 90.71%),
         linear-gradient(336deg, rgba(0, 77, 160, 0.7), rgba(0,0,255,0) 90.71%),
 		url('../images/prod-images/bg-core.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+    background-position: center center;
+    
+}
+
+#gallery-content{
+	background: 
+        linear-gradient(127deg, rgba(7, 53, 0, 0.2), rgba(0,255,0,0) 50.71%),
+        linear-gradient(217deg, rgba(0, 77, 160, 0.2), rgba(0,0,255,0) 50.71%),
+        linear-gradient(336deg, rgba(255, 231, 136, 0.2), rgba(255,0,0,0) 50.71%),
+		url('') !important;
 	background-repeat: no-repeat;
 	background-size: cover;
     background-position: center center;
@@ -77,11 +91,11 @@
 }
 
 .blur-content-no-border{
-    background: rgba(149, 149, 149, 0.5);
+    background: rgba(149, 149, 149, 0.2);
     border-radius: 0px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
     /* filter: blur(8px); */
     /* -webkit-filter: blur(8px); */
     border: 0px solid rgba(255, 255, 255, 0.5);
@@ -139,7 +153,7 @@
 	background: #B59066 !important;
 	color: var(--button-text-button-primary-text, #FFF);
 	text-align: center;
-	font-size: 20px;
+	font-size: 2.2rem;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 600;
@@ -272,15 +286,16 @@ border: 10px #F2D2AE dashed;
 
 .media-icon-md {
     font-size: 1.4rem ;
-    color: var(--main-bg-darker-color);
+    color: var(--primary-green-hover);
 }
 
 .media-icon-md:hover{
     box-shadow: 0 0 1rem var(--light-text-color) !important;
-    color: var(--dark-color);
+    color: var(--light-text-color);
     font-size: 1.4rem ;
     transition: 0.65s ease;
-    transform:translateY(-20px);
+    transform:translateY(-15px);
+    background-color: var(--primary-green-hover);
 }
 
 
@@ -302,13 +317,13 @@ border: 10px #F2D2AE dashed;
 }
 
 
-#landing-image img{
+/* #landing-image img{
     transition: 2.5s ease;
-}
+} */
 
-#landing-image img:hover{
-    animation: floatImage 4s ease-in-out infinite;
-    transition: 2.5s ease;
+#landing-image img{
+    animation: floatImage 3s ease-in-out infinite;
+    transition: 1.5s ease;
 }
 
 @keyframes floatImage{
