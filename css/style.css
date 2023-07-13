@@ -14,7 +14,7 @@
     --dark-color: #000000;
     --light-text-color: #ffffff;
     --red-color: #ff0000;
-    --primary-green:#6c7e42;
+    --primary-green:#92ab57;
     --half-light:rgba(190, 190, 190, 0.3);
     --bs-gradient:rgba(0, 0, 0, 0.59);
 }
@@ -28,9 +28,9 @@
 
 #landing-content {
 	background: 
-        linear-gradient(127deg, rgba(7, 53, 0, 0.9), rgba(0,255,0,0) 70.71%),
-        linear-gradient(217deg, rgba(255, 231, 136, 0.6), rgba(255,0,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0, 77, 160, 0.6), rgba(0,0,255,0) 70.71%),
+        linear-gradient(127deg, rgba(0, 77, 160, 0.6), rgba(0,255,0,0) 70.71%),
+        linear-gradient(217deg, rgba(255, 231, 136, 0.6), rgba(255,0,0,0) 30.71%),
+        linear-gradient(336deg, rgba(7, 53, 0, 0.9), rgba(0,0,255,0) 30.71%),
 		url('../images/landing-01.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -111,13 +111,13 @@
 
 #carouselExampleCaptions .carousel-indicators button{
     border-radius: 50%;
-    width: 22px;
-    height: 22px;
-    background-color:var(--primary-green);
+    width: 32px;
+    height: 32px;
+    background-color:var(--light-text-color);
 }
 
 .indicators button:hover{
-    background-color:var(--primary-green);
+
     background-color:var(--half-light);
 
 }
@@ -197,20 +197,44 @@ border: 10px #F2D2AE dashed;
 
 .media-icon-sm {
     font-size: 1.4rem ;
-    color: var(--light-text-color);
+    color: var(--main-bg-darker-color);
+
 }
 
 .media-icon-md {
-    
     font-size: 2.4rem ;
-    color: var(--light-text-color);
-
+    color: var(--main-bg-darker-color);
 }
 
 .media-icon-lg {
     
     font-size: 3.4rem ;
+    color: var(--main-bg-darker-color);
+
+}
+
+.media-icon-sm:hover{
+    box-shadow: 0 0 1rem var(--light-text-color) !important;
     color: var(--light-text-color);
+    font-size: 3.4rem ;
+    transition: 0.65s ease;
+    transform:translateY(-20px);
+}
+
+.media-icon-md:hover{
+    box-shadow: 0 0 1rem var(--light-text-color) !important;
+    color: var(--dark-color);
+    font-size: 2.4rem ;
+    transition: 0.65s ease;
+    transform:translateY(-20px);
+}
+
+.media-icon-lg:hover{
+    box-shadow: 0 0 1rem var(--light-text-color) !important;
+    color: var(--light-text-color);
+    font-size: 3.4rem ;
+    transition: 0.65s ease;
+    transform:translateY(-20px);
 
 }
 
