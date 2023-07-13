@@ -15,6 +15,7 @@
     --light-text-color: #ffffff;
     --red-color: #ff0000;
     --primary-green:#92ab57;
+    --primary-green-hover:#5d6e36;
     --half-light:rgba(190, 190, 190, 0.3);
     --bs-gradient:rgba(0, 0, 0, 0.59);
 }
@@ -28,13 +29,15 @@
 
 #landing-content {
 	background: 
-        linear-gradient(127deg, rgba(0, 77, 160, 0.6), rgba(0,255,0,0) 70.71%),
-        linear-gradient(217deg, rgba(255, 231, 136, 0.6), rgba(255,0,0,0) 30.71%),
-        linear-gradient(336deg, rgba(7, 53, 0, 0.9), rgba(0,0,255,0) 30.71%),
+    linear-gradient(127deg, rgba(7, 53, 0, 0.8), rgba(0,255,0,0) 50.71%),
+    linear-gradient(217deg, rgba(255, 231, 136, 0.8), rgba(255,0,0,0) 50.71%),
+    linear-gradient(336deg, rgba(0, 77, 160, 0.8), rgba(0,0,255,0) 50.71%),
 		url('../images/landing-01.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
 
 #contact-content{
    
@@ -60,10 +63,21 @@
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
+.blur-content-half {
+    background: rgba(146, 146, 146, 0.5);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    /* filter: blur(8px); */
+    /* -webkit-filter: blur(8px); */
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
 
 .title {
 	color: #FFF;
-	font-size: 84px;
+    padding-top: 25px;
+	font-size: 5rem;
 	font-family: Montserrat;
 	font-style: normal;
 	font-weight: 600;
@@ -99,7 +113,7 @@
     color: var(--button-text-button-primary-text, #B59066);
 }
 
-#description {
+.description {
 	color: #765C3D;
 	text-align: center;
 	font-size: 24px;
@@ -124,6 +138,10 @@
 
 .bg-custom-color-green{
     background-color:var(--primary-green);
+}
+
+.bg-custom-color-green-hover:hover{
+    background-color:var(--primary-green-hover);
 }
 
 .cart{
@@ -207,7 +225,7 @@ border: 10px #F2D2AE dashed;
 }
 
 .media-icon-lg {
-    
+
     font-size: 3.4rem ;
     color: var(--main-bg-darker-color);
 
@@ -298,6 +316,11 @@ border: 10px #F2D2AE dashed;
     font-size: 18px;
 }
 
+.dropdown-item{	
+    background:var(--primary-green) !important;}
+.dropdown-item:hover {	
+    background:var(--light-text-color) !important;}
+    
 a{
     text-decoration: none;
 }
