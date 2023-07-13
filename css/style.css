@@ -44,9 +44,9 @@
 #contact-content{
    
 	background: 
-        linear-gradient(127deg, rgba(7, 53, 0, 0.9), rgba(0,255,0,0) 70.71%),
-        linear-gradient(217deg, rgba(255, 231, 136, 0.6), rgba(255,0,0,0) 70.71%),
-        linear-gradient(336deg, rgba(0, 77, 160, 0.6), rgba(0,0,255,0) 70.71%),
+        linear-gradient(127deg, rgba(7, 53, 0, 0.7), rgba(0,255,0,0) 90.71%),
+        linear-gradient(217deg, rgba(255, 231, 136, 0.7), rgba(255,0,0,0) 90.71%),
+        linear-gradient(336deg, rgba(0, 77, 160, 0.7), rgba(0,0,255,0) 90.71%),
 		url('../images/prod-images/bg-core.jpg');
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -261,25 +261,18 @@ border: 10px #F2D2AE dashed;
 
 }
 
-.media-icon-md {
-    font-size: 1.4rem ;
-    color: var(--main-bg-darker-color);
-}
-
-.media-icon-lg {
-
-    /* font-size: 3.4rem ; */
-    font-size: 1.4rem ;
-    color: var(--main-bg-darker-color);
-
-}
-
 .media-icon-sm:hover{
     box-shadow: 0 0 1rem var(--light-text-color) !important;
     color: var(--light-text-color);
     font-size: 1.4rem ;
     transition: 0.65s ease;
     transform:translateY(-20px);
+}
+
+
+.media-icon-md {
+    font-size: 1.4rem ;
+    color: var(--main-bg-darker-color);
 }
 
 .media-icon-md:hover{
@@ -290,6 +283,15 @@ border: 10px #F2D2AE dashed;
     transform:translateY(-20px);
 }
 
+
+.media-icon-lg {
+
+    /* font-size: 3.4rem ; */
+    font-size: 1.4rem ;
+    color: var(--main-bg-darker-color);
+
+}
+
 .media-icon-lg:hover{
     box-shadow: 0 0 1rem var(--light-text-color) !important;
     color: var(--light-text-color);
@@ -298,6 +300,7 @@ border: 10px #F2D2AE dashed;
     transform:translateY(-20px);
 
 }
+
 
 #landing-image img{
     transition: 2.5s ease;
