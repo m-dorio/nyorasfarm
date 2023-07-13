@@ -8,6 +8,8 @@
     scroll-behavior: smooth;
 }
 
+/* MIKE DORIO BUILT THIS WEBPAGE FOR A FRIEND */
+
 :root{
     --main-bg-color: #CDC2AE;
     --main-bg-darker-color: #7d6e51;
@@ -192,6 +194,10 @@
 
 .border-custom-dashed{
 border: 10px #F2D2AE dashed;
+}
+
+.border-custom-dashed-white{
+    border: 2px #ebebeb dashed;
 
 }
 
@@ -345,7 +351,7 @@ border: 10px #F2D2AE dashed;
     width:100%;
     position:absolute;
   }
-  
+
 
 .nav-item a:hover{
     box-shadow: 0 0 1rem var(--light-text-color) !important;
