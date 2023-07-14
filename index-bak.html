@@ -16,26 +16,24 @@
     
         <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
         <link rel="stylesheet" href="./css/toggle.css">
-        <link rel="canonical" href="https://codepen.io/jorgecardoso/pen/oBQyZZ" />
+
         <title>Nyora's Natures Farm</title>
     </head>
 
-    <body translate="no">
-
-     
-
+    <body>
       <header class="header sticky-md-top sticky-top">
 
         <!-- NAVBAR START-->
         <!-- https://getbootstrap.com/docs/4.6/components/navbar/ -->
         <nav class="navbar fixed-top bg-custom-color-green half-light Small shadow navbar-expand-lg">
-          <div class="container-fluid">
+          <div class="container">
               <div data-aos="flip-left">
                 <a class="navbar-brand" href="#">
                   <img src="./images/logo.png" alt="Nyora's" height="45">
                 </a>
               </div>
-                  <!-- <div class="d-xl-none d-lg-none d-md-block d-sm-block mx-2">
+   
+                  <div class="d-xl-none d-lg-none d-md-block d-sm-block mx-2">
                     <div class="dropdown">
                       <button class="bg-custom-color-green-hover btn btn-light dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                         <i class="bi bi-list"></i>
@@ -47,38 +45,20 @@
                             <li><a class="dropdown-item text-white py-2" href="#location">MAP</a></li>
                           </ul>
                     </div>
-                  </div> -->
-
-                  <div class="wrapper d-xl-none d-lg-none d-md-block d-sm-block mx-2">
-                    <input type="checkbox" id="menuToggler" class="input-toggler" />
-                      <label for="menuToggler" class="menu-toggler">
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                        <span class="menu-toggler__line"></span>
-                      </label>
-                    <aside class="sidebar">
-                      <ul class="menu">
-                        <li class="menu__item"><a class="menu__link" href="#">HOME</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#gallery">GALLERY</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#location">MAP</a></li>
-                        <li class="menu__item"><a class="menu__link" href="#contact">CONTACT</a></li>
-                        <li class="menu__item"><a class="menu__link" target="_blank" href="https://www.facebook.com/nyorasnaturesfarm">FACEBOOK</a></li>
-                      </ul>
-                    </aside>
                   </div>
-
+       
                   <div class="d-none d-xl-block d-lg-block d-md-none d-sm-none px-2">
                       <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#">HOME</a>
-                      <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#gallery" >GALLERY</a>  
-                      <!-- <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#location" ></a>                         -->
+                      <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#gallery" >GALLERY</a>                          
                       <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#contact" >CONTACT</a>
-       
+                      <a role="button" class="shadow font-weight-bold px-3 btn btn-outline-light custom-menu" href="#location" >MAP</a>
                   </div>
           </div>
         </nav>
       <!-- NAVBAR ENDS-->
       </header>
 
+      
       <section id="landing" >
         <div id="landing-content">
           <div class="container-fluid blur-content-no-border min-vh-100 py-5">
@@ -139,9 +119,9 @@
                     </div>
                 </div>
               </div>
-              <div class="col-xl-4 col-lg-5 col-md-12 pt-md-5 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-center">
+              <div class="col-xl-4 col-lg-5 col-md-12 p-2 d-none d-sm-none d-md-none d-lg-block d-xl-block d-xxl-block text-center">
                 <div id="landing-image" class="align-content-center text-center box p-md-2">
-                  <img class=" shadow border-custom-dashed rounded-circle w-100" src="./images/prod-images/landing-logo.jpg" alt="...">
+                  <img class="p-2 shadow border-custom-dashed rounded-circle w-100" src="./images/prod-images/landing-logo.jpg" alt="...">
                 </div>
               </div>
 
@@ -275,7 +255,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="contact">
         <div id="contact-content" class="container-fluid">
             <div class="row min-vh-100 align-content-center">
 
@@ -345,12 +325,15 @@
                                   </div>
                     
                               </div>
-                              <div id="contact" class="pt-3">
+                              <div class="pt-3">
                                 <button class="btn btn-success mb-3 font-weight-bold" type="submit">Send</button>
                                 <button type="reset" class="btn btn-danger mb-3 font-weight-bold">Reset Form</button>
                               </div>
                           </form>
-                        
+                          <div class="pt-sm-5 pt-5">
+                            <p class="align-content-center text-md-center text-center h5 text-white">Insert Content Here &nbsp</p>
+                            <p class="align-content-center text-md-center text-center text-white">...</p>
+                          </div>
 
                       </div>
                     </div> 
@@ -384,30 +367,17 @@
         </div>  
       </section>
 
-    <footer class="footer justify-content-between align-items-center">
-     
-    <div class="container-fluid">
-      <div class="row align-content-center align-items-center">
-        <div class="col-sm-12 d-sm-block d-md-none align-items-center text-center">
-          <div class="footer-iconTop mx-2 footer-text">
-            <p>  Copyright &copy; 2023 by Nyora's. | All rights Reserved.</p>
-            <a href="#"> <i class="text-light bi bi-arrow-up-circle-fill"></i></a>
-        </div>
-        </div>
+    <footer class="footer d-flex justify-content-between align-items-center">
+      <div class="mx-2 footer-text">
+          <p>  Copyright &copy; 2023 by Nyora's. | All rights Reserved.</p>
       </div>
-    </div>
-     
-     
-        <div class="d-none d-sm-none d-md-block mx-2 footer-text">
-            <p>  Copyright &copy; 2023 by Nyora's. | All rights Reserved.</p>
-        </div>
 
-        <div class="d-none d-sm-none d-md-block mx-2 footer-iconTop d-inline-flex">
-            <a href="#"> <i class="text-light bi bi-arrow-up-circle-fill"></i></a>
-        </div>
-   
+      <div class="mx-2 footer-iconTop d-inline-flex">
+          <a href="#"> <i class="text-light bi bi-arrow-up-circle-fill"></i></a>
+      </div>
     </footer> 
-   
+
+
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js" integrity="sha384-fbbOQedDUMZZ5KreZpsbe1LCZPVmfTnH7ois6mU1QK+m14rQ1l2bGBq41eYeM/fS" crossorigin="anonymous"></script>
     
@@ -419,6 +389,6 @@
               });
         </script>
         <script src="./js/toggle.js"></script>
-        <script src="./js/index.js"></script>
+
       </body>
 </html>
